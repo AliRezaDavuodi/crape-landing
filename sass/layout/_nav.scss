@@ -1,0 +1,57 @@
+.nav {
+  @include flex;
+  font-size: 1.6rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__list {
+    @include flex;
+    margin-right: auto;
+    font-weight: 300;
+
+    @media only screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 375px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    @media only screen and (max-width: 375px) {
+      margin: 0.7rem 0;
+    }
+  }
+
+  &__link {
+    @include flex;
+    transition: all 0.2s;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-transform: capitalize;
+
+    i {
+      margin-left: 0.5rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.2rem;
+      background-color: #f00;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s cubic-bezier(0.54, -0.13, 0.43, 1.23);
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

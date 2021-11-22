@@ -1,0 +1,17 @@
+.arrow {
+  @include fullFlex(center);
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: 375px) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: $colorRedDark;
+  }
+}

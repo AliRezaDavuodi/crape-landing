@@ -1,0 +1,62 @@
+.form {
+  &__group {
+    position: relative;
+    width: 30rem;
+
+    @media only screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+
+    i {
+      color: $colorDark;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $colorBluePrimary;
+      }
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 5rem;
+    background-color: transparent;
+    border-bottom: 1px solid $colorGrayLight;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    &:focus {
+      border-bottom-color: $colorRedDark;
+    }
+  }
+
+  &__input:placeholder-shown + &__label {
+    top: 50%;
+    left: 5rem;
+    font-size: 1.4rem;
+    transform: translateY(-50%);
+    color: $colorDark;
+  }
+
+  &__label {
+    position: absolute;
+    text-transform: capitalize;
+    left: 5rem;
+    top: -2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    color: $colorGrayLight;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    color: $colorGrayLight;
+  }
+}

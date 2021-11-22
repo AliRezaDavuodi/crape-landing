@@ -1,0 +1,41 @@
+.btns {
+  margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
+}
+
+.btn {
+  border-radius: 10rem;
+  font-weight: 300;
+  padding: 0.7rem 1.8rem;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  box-shadow: 0 1rem 2rem rgba($colorDark, 0.2);
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($colorDark, 0.4);
+  }
+
+  &__white {
+    margin: 0 1rem;
+    background-color: #fff;
+
+    &:hover {
+      background-color: $colorBluePrimary;
+      color: #fff;
+    }
+  }
+
+  &__orange {
+    background-color: $colorRedDark;
+    margin: 2rem 0;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($colorRedDark, 10%);
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.cards {
+  @include flex;
+  width: 70%;
+  overflow-x: scroll;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 375px) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card__box {
+  @media only screen and (max-width: 375px) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.card {
+  width: 25rem;
+  text-align: center;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba($colorDark, 0.2);
+
+  @media only screen and (max-width: 375px) {
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  &-1 {
+    background-color: #7ba0b5;
+  }
+  &-2 {
+    background-color: #389ad1;
+  }
+  &-3 {
+    background-color: #085fa9;
+  }
+  &-4 {
+    background-color: #103c55;
+  }
+
+  &__content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1.5rem 1.5rem 1rem 1rem;
+
+    @media only screen and (max-width: 375px) {
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+  }
+
+  &__header {
+    padding: 3rem 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

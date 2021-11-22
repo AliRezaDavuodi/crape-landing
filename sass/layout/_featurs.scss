@@ -1,0 +1,46 @@
+.featurs {
+  @include fullFlex(space-between);
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.contact {
+  width: 50rem;
+  text-align: center;
+  color: #fff;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  &__box {
+    position: relative;
+    background-color: #fd7669;
+    padding: 1.5rem 1rem;
+    padding-right: 2rem;
+    box-shadow: 0 1rem 2rem rgba($colorDark, 0.2);
+    width: 30rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .callIcon {
+    @include flex;
+    position: absolute;
+    padding: 0 2rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fc9389;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: darken(#fc9389, 20%);
+    }
+  }
+}
