@@ -11,7 +11,10 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.8rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+  height: 100vh;
+  background: url(../img/mainbanner_toned2.png), linear-gradient(to top left, #085fa9, #7ba0b5);
+  background-position: 50% 10%; }
 
 a {
   text-decoration: none;

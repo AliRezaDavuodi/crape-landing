@@ -14,6 +14,11 @@ body {
   box-sizing: border-box;
   font-size: 1.8rem;
   line-height: 1.6;
+
+  height: 100vh;
+  background: url(../img/mainbanner_toned2.png),
+    linear-gradient(to top left, $colorBluePrimary, $colorBlueSecondary);
+  background-position: 50% 10%;
 }
 
 a {
