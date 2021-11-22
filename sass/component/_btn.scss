@@ -1,7 +1,7 @@
 .btns {
   margin: 0;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 803px) {
     margin-top: 1rem;
   }
 }
@@ -21,18 +21,18 @@
 
   &__white {
     margin: 0 1rem;
-    background-color: #fff;
+    background-color: $colorWhite;
 
     &:hover {
       background-color: $colorBluePrimary;
-      color: #fff;
+      color: $colorWhite;
     }
   }
 
   &__orange {
     background-color: $colorRedDark;
     margin: 2rem 0;
-    color: #fff;
+    color: $colorWhite;
 
     &:hover {
       background-color: darken($colorRedDark, 10%);

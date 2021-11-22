@@ -47,14 +47,17 @@ input {
 
 .container {
   padding: 2rem 5rem; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 920px) {
     .container {
-      padding: 2rem 0; } }
+      padding: 2rem 1rem; } }
+  @media only screen and (max-width: 375px) {
+    .container {
+      padding: 2rem 0rem; } }
 
 .heading {
   text-transform: capitalize; }
   .heading-1 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     padding: 1.5rem 0; }
   .heading-2 {
     font-size: 3rem;
@@ -65,7 +68,9 @@ input {
       text-transform: lowercase;
       font-weight: 500; }
   .heading-3 {
-    text-align: right; }
+    text-align: right;
+    font-weight: 300;
+    font-size: 2rem; }
 
 .paragraph {
   font-size: 1.5rem; }
@@ -95,7 +100,7 @@ input {
 
 .btns {
   margin: 0; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 803px) {
     .btns {
       margin-top: 1rem; } }
 
@@ -125,7 +130,7 @@ input {
 .cards {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 90%;
   overflow-x: scroll;
   border-radius: 1rem;
   padding: 1rem;
@@ -179,7 +184,7 @@ input {
 .form__group {
   position: relative;
   width: 30rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     .form__group {
       margin: 0 auto; } }
   .form__group i {
@@ -229,25 +234,25 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     .featurs {
       flex-direction: column; } }
 
 .contact {
-  width: 50rem;
+  width: 45rem;
   text-align: center;
   color: #fff; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     .contact {
       width: 100%;
       margin-top: 2rem; } }
   .contact__box {
     position: relative;
     background-color: #fd7669;
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.8rem;
     padding-right: 2rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    width: 30rem;
+    width: 28rem;
     margin: 0 auto;
     border-radius: 0.5rem;
     overflow: hidden; }
@@ -280,7 +285,7 @@ input {
       border-radius: 0; } }
   .hero .content {
     padding: 10rem 0; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
       .hero .content {
         text-align: center; } }
 
@@ -288,7 +293,7 @@ input {
   display: flex;
   align-items: center;
   font-size: 1.6rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 803px) {
     .nav {
       flex-direction: column; } }
   .nav__list {
@@ -296,15 +301,15 @@ input {
     align-items: center;
     margin-right: auto;
     font-weight: 300; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 803px) {
       .nav__list {
         margin: 0 auto; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 413px) {
       .nav__list {
         flex-direction: column; } }
   .nav__item:not(:last-child) {
     margin-right: 0.5rem; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 413px) {
     .nav__item {
       margin: 0.7rem 0; } }
   .nav__link {
@@ -321,7 +326,7 @@ input {
       position: absolute;
       width: 0;
       height: 0.2rem;
-      background-color: #f00;
+      background-color: #fd7669;
       bottom: 0;
       left: 0;
       transition: all 0.3s cubic-bezier(0.54, -0.13, 0.43, 1.23); }

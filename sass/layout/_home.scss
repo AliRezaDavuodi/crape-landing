@@ -2,7 +2,7 @@
   width: 90%;
   min-height: 85vh;
   background: url(../../img/mainbanner_toned2.png);
-  background-color: #fff;
+  background-color: $colorWhite;
   background-position: center;
   background-size: cover;
   border-radius: 2rem;
@@ -16,7 +16,7 @@
   .content {
     padding: 10rem 0;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
       text-align: center;
     }
   }

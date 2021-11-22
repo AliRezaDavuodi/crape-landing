@@ -2,7 +2,7 @@
   @include flex;
   font-size: 1.6rem;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 803px) {
     flex-direction: column;
   }
 
@@ -11,10 +11,10 @@
     margin-right: auto;
     font-weight: 300;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 803px) {
       margin: 0 auto;
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 413px) {
       flex-direction: column;
     }
   }
@@ -24,7 +24,7 @@
       margin-right: 0.5rem;
     }
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 413px) {
       margin: 0.7rem 0;
     }
   }
@@ -45,7 +45,7 @@
       position: absolute;
       width: 0;
       height: 0.2rem;
-      background-color: #f00;
+      background-color: $colorRedDark;
       bottom: 0;
       left: 0;
       transition: all 0.3s cubic-bezier(0.54, -0.13, 0.43, 1.23);
