@@ -1,1 +1,10 @@
-
+.hero {
+  width: 90%;
+  min-height: 90%;
+  background: url(../../img/mainbanner_toned2.png);
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem rgba($colorDark, 0.5);
+}
