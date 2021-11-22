@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   font-size: 1.8rem;
   line-height: 1.6;
+  font-family: "Lato", sans-serif;
   height: 100vh;
   background: url(../img/mainbanner_toned2.png), linear-gradient(to top left, #085fa9, #7ba0b5);
   background-position: 50% 10%; }
@@ -23,10 +24,13 @@ main {
   width: 100%;
   height: 100%; }
 
-a {
+a, a::after, a::before {
   text-decoration: none;
   color: #000;
   display: inline-block; }
+
+ul {
+  list-style: none; }
 
 .container {
   padding: 2rem 5rem; }
@@ -40,3 +44,43 @@ a {
   background-size: cover;
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem; }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-weight: 300; }
+  .nav__item:not(:last-child) {
+    margin-right: 0.5rem; }
+  .nav__link {
+    transition: all 0.2s;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-transform: capitalize; }
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.2rem;
+      background-color: #f00;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s cubic-bezier(0.54, -0.13, 0.43, 1.23); }
+    .nav__link:hover::after {
+      width: 100%; }
+
+.btn {
+  margin: 0 1rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  font-weight: 300;
+  padding: 0.7rem 1.8rem;
+  text-transform: capitalize;
+  transition: all 0.3s; }
+  .btn:hover {
+    background-color: #085fa9;
+    color: #fff; }

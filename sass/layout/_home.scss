@@ -8,3 +8,56 @@
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba($colorDark, 0.5);
 }
+
+.nav {
+  @include flex;
+  font-size: 1.6rem;
+
+  &__list {
+    @include flex;
+    margin-right: auto;
+    font-weight: 300;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__link {
+    transition: all 0.2s;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-transform: capitalize;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.2rem;
+      background-color: #f00;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s cubic-bezier(0.54, -0.13, 0.43, 1.23);
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+  margin: 0 1rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  font-weight: 300;
+  padding: 0.7rem 1.8rem;
+  text-transform: capitalize;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $colorBluePrimary;
+    color: #fff;
+  }
+}

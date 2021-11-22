@@ -14,6 +14,7 @@ body {
   box-sizing: border-box;
   font-size: 1.8rem;
   line-height: 1.6;
+  font-family: $fontLato;
 
   height: 100vh;
   background: url(../img/mainbanner_toned2.png),
@@ -22,15 +23,23 @@ body {
 }
 
 main {
-  @include fullFlex;
+  @include fullFlex(center);
   width: 100%;
   height: 100%;
 }
 
 a {
-  text-decoration: none;
-  color: $colorDark;
-  display: inline-block;
+  &,
+  &::after,
+  &::before {
+    text-decoration: none;
+    color: $colorDark;
+    display: inline-block;
+  }
+}
+
+ul {
+  list-style: none;
 }
 
 .container {

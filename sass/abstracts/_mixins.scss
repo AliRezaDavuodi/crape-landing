@@ -1,5 +1,9 @@
-@mixin fullFlex {
+@mixin fullFlex($jus) {
   display: flex;
-  justify-content: center;
+  justify-content: $jus;
+  align-items: center;
+}
+@mixin flex {
+  display: flex;
   align-items: center;
 }
