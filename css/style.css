@@ -100,7 +100,7 @@ input {
 
 .btns {
   margin: 0; }
-  @media only screen and (max-width: 803px) {
+  @media only screen and (max-width: 855px) {
     .btns {
       margin-top: 1rem; } }
 
@@ -131,7 +131,7 @@ input {
   display: flex;
   align-items: center;
   width: 90%;
-  overflow-x: scroll;
+  overflow-x: hidden;
   border-radius: 1rem;
   padding: 1rem;
   position: relative; }
@@ -142,8 +142,6 @@ input {
     .cards {
       flex-direction: column;
       padding: 0; } }
-  .cards::-webkit-scrollbar {
-    display: none; }
 
 @media only screen and (max-width: 375px) {
   .card__box {
@@ -293,15 +291,18 @@ input {
   display: flex;
   align-items: center;
   font-size: 1.6rem; }
-  @media only screen and (max-width: 803px) {
+  @media only screen and (max-width: 855px) {
     .nav {
       flex-direction: column; } }
+  .nav .logo {
+    height: 3.5rem;
+    margin-right: 1rem; }
   .nav__list {
     display: flex;
     align-items: center;
     margin-right: auto;
     font-weight: 300; }
-    @media only screen and (max-width: 803px) {
+    @media only screen and (max-width: 855px) {
       .nav__list {
         margin: 0 auto; } }
     @media only screen and (max-width: 413px) {

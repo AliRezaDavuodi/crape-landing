@@ -2,8 +2,13 @@
   @include flex;
   font-size: 1.6rem;
 
-  @media only screen and (max-width: 803px) {
+  @media only screen and (max-width: 855px) {
     flex-direction: column;
+  }
+
+  .logo {
+    height: 3.5rem;
+    margin-right: 1rem;
   }
 
   &__list {
@@ -11,7 +16,7 @@
     margin-right: auto;
     font-weight: 300;
 
-    @media only screen and (max-width: 803px) {
+    @media only screen and (max-width: 855px) {
       margin: 0 auto;
     }
     @media only screen and (max-width: 413px) {
