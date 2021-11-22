@@ -13,6 +13,14 @@
       rel="stylesheet"
     />
 
+    <!-- fontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <!-- icon -->
     <link rel="shortcut icon" href="img/cutlery.png" type="image/x-icon" />
 
@@ -26,13 +34,16 @@
     <main>
       <div class="hero">
         <div class="container">
+          <!-- navbar -->
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#" class="nav__link">home</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">service</a>
+                <a href="#" class="nav__link"
+                  >service <i class="fas fa-chevron-down"></i
+                ></a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">how it works</a>
@@ -45,10 +56,151 @@
               </li>
             </ul>
             <div class="btns">
-              <a href="#" class="btn">request a call</a>
-              <a href="#" class="btn">login</a>
+              <a href="#" class="btn btn__white">request a call</a>
+              <a href="#" class="btn btn__white">login</a>
             </div>
           </nav>
+          <!-- content -->
+          <div class="content">
+            <form action="#" class="form">
+              <div class="form__group">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  class="form__input"
+                  id="search"
+                  placeholder="search"
+                />
+                <label for="search" class="form__label">search</label>
+                <span class="form__icon"><i class="fas fa-search"></i> </span>
+              </div>
+            </form>
+            <h1 class="heading heading-1">
+              You run your business. <br />
+              We’ll hanle your bookkeeping
+            </h1>
+            <p class="paragraph">
+              Get a professional bookkeeper at a fraction of <br />
+              the cost of a bookkeeping firm, and powerful <br />
+              online accounting software with zero learning <br />
+              curve .
+            </p>
+            <a href="#" class="btn btn__orange">Start a Free Trial</a>
+          </div>
+          <!-- featurs -->
+          <div class="featurs">
+            <!-- Cards -->
+            <div class="cards">
+              <!-- Card 1 -->
+              <div class="card__box">
+                <div class="card card-1">
+                  <div class="card__header">
+                    <img src="img/shop.svg" alt="shop" />
+                    <p class="card__header--title">micro</p>
+                  </div>
+                  <div class="card__content">
+                    <h2 class="heading heading-2">
+                      <span>$</span> 139/ <span>m</span>
+                    </h2>
+                    <p class="paragraph paragraph-sm">
+                      If billed annually <br />
+                      <span class="mute">$159/m if billed monthly</span>
+                    </p>
+                    <a href="#" class="btn btn__orange"
+                      >Try a Free for 7 Days</a
+                    >
+                    <p class="blue">
+                      Monthly expenses <br />
+                      From $1k to 7.5k
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card__box">
+                <div class="card card-2">
+                  <div class="card__header">
+                    <img src="img/boutique.svg" alt="shop" />
+                    <p class="card__header--title">Boutique</p>
+                  </div>
+                  <div class="card__content">
+                    <h2 class="heading heading-2">
+                      <span>$</span> 169/ <span>m</span>
+                    </h2>
+                    <p class="paragraph paragraph-sm">
+                      If billed annually <br />
+                      <span class="mute">$199/m if billed monthly</span>
+                    </p>
+                    <a href="#" class="btn btn__orange"
+                      >Try a Free for 7 Days</a
+                    >
+                    <p class="blue">
+                      Monthly expenses <br />
+                      From $7.5k to 20k
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card__box">
+                <div class="card card-3">
+                  <div class="card__header">
+                    <img src="img/venture.svg" alt="shop" />
+                    <p class="card__header--title">Ventrue</p>
+                  </div>
+                  <div class="card__content">
+                    <h2 class="heading heading-2">
+                      <span>$</span> 209/ <span>m</span>
+                    </h2>
+                    <p class="paragraph paragraph-sm">
+                      If billed annually <br />
+                      <span class="mute">$249/m if billed monthly</span>
+                    </p>
+                    <a href="#" class="btn btn__orange"
+                      >Try a Free for 7 Days</a
+                    >
+                    <p class="blue">
+                      Monthly expenses <br />
+                      From $20k to 60k
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card__box">
+                <div class="card card-4">
+                  <div class="card__header">
+                    <img src="img/company.svg" alt="shop" />
+                    <p class="card__header--title">Corporate</p>
+                  </div>
+                  <div class="card__content">
+                    <h2 class="heading heading-2">
+                      <span>$</span> 299/ <span>m</span>
+                    </h2>
+                    <p class="paragraph paragraph-sm">
+                      If billed annually <br />
+                      <span class="mute">$349/m if billed monthly</span>
+                    </p>
+                    <a href="#" class="btn btn__orange"
+                      >Try a Free for 7 Days</a
+                    >
+                    <p class="blue">
+                      Monthly expenses <br />
+                      Up to $1M
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact__box">
+                <span class="callIcon">
+                  <img src="img/call.svg" alt="call" />
+                </span>
+                <h3 class="heading heading-3">(855) - 001 001 001</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
