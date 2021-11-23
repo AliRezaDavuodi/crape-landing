@@ -8,7 +8,7 @@
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba($colorDark, 0.5);
 
-  @media only screen and (max-width: 600px) {
+  @include respond(md) {
     width: 100%;
     border-radius: 0;
   }
@@ -16,7 +16,7 @@
   .content {
     padding: 10rem 0;
 
-    @media only screen and (max-width: 1000px) {
+    @include respond(biggest) {
       text-align: center;
     }
   }

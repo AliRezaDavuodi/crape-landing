@@ -2,7 +2,7 @@
   @include flex;
   font-size: 1.6rem;
 
-  @media only screen and (max-width: 855px) {
+  @include respond(xl) {
     flex-direction: column;
   }
 
@@ -16,10 +16,10 @@
     margin-right: auto;
     font-weight: 300;
 
-    @media only screen and (max-width: 855px) {
+    @include respond(xl) {
       margin: 0 auto;
     }
-    @media only screen and (max-width: 413px) {
+    @include respond(sm) {
       flex-direction: column;
     }
   }
@@ -29,7 +29,7 @@
       margin-right: 0.5rem;
     }
 
-    @media only screen and (max-width: 413px) {
+    @include respond(sm) {
       margin: 0.7rem 0;
     }
   }
