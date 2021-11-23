@@ -6,7 +6,7 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  @include respond(smallest) {
+  @include respond(md) {
     opacity: 0;
     visibility: hidden;
   }

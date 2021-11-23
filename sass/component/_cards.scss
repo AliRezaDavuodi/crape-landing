@@ -9,14 +9,14 @@
   @include respond(lg) {
     width: 100%;
   }
-  @include respond(smallest) {
+  @include respond(md) {
     flex-direction: column;
     padding: 0;
   }
 }
 
 .card__box {
-  @include respond(smallest) {
+  @include respond(md) {
     width: 100%;
     padding: 0;
   }
@@ -29,7 +29,7 @@
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba($colorDark, 0.2);
 
-  @include respond(smallest) {
+  @include respond(md) {
     margin: 1rem 0;
     width: 100%;
     border-radius: 0;
@@ -53,7 +53,7 @@
     padding: 1rem;
     border-radius: 1.5rem 1.5rem 1rem 1rem;
 
-    @include respond(smallest) {
+    @include respond(md) {
       border-radius: 1.5rem 1.5rem 0 0;
     }
   }
