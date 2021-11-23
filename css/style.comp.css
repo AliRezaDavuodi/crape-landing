@@ -7,7 +7,7 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 48em) {
     html {
       font-size: 55%; } }
 
@@ -25,7 +25,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5rem 0; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     main {
       padding: 0; } }
 
@@ -47,10 +47,10 @@ input {
 
 .container {
   padding: 2rem 5rem; }
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 57.5em) {
     .container {
       padding: 2rem 1rem; } }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 23.43em) {
     .container {
       padding: 2rem 0rem; } }
 
@@ -91,7 +91,7 @@ input {
   height: 5rem;
   cursor: pointer;
   transition: all 0.2s; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 23.43em) {
     .arrow {
       opacity: 0;
       visibility: hidden; } }
@@ -100,7 +100,7 @@ input {
 
 .btns {
   margin: 0; }
-  @media only screen and (max-width: 855px) {
+  @media only screen and (max-width: 53.43em) {
     .btns {
       margin-top: 1rem; } }
 
@@ -135,15 +135,15 @@ input {
   border-radius: 1rem;
   padding: 1rem;
   position: relative; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 48em) {
     .cards {
       width: 100%; } }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 23.43em) {
     .cards {
       flex-direction: column;
       padding: 0; } }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 23.43em) {
   .card__box {
     width: 100%;
     padding: 0; } }
@@ -154,7 +154,7 @@ input {
   margin: 0 1rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 23.43em) {
     .card {
       margin: 1rem 0;
       width: 100%;
@@ -171,7 +171,7 @@ input {
     background-color: #fff;
     padding: 1rem;
     border-radius: 1.5rem 1.5rem 1rem 1rem; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 23.43em) {
       .card__content {
         border-radius: 1.5rem 1.5rem 0 0; } }
   .card__header {
@@ -182,7 +182,7 @@ input {
 .form__group {
   position: relative;
   width: 30rem; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 62.5em) {
     .form__group {
       margin: 0 auto; } }
   .form__group i {
@@ -232,7 +232,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 62.5em) {
     .featurs {
       flex-direction: column; } }
 
@@ -240,7 +240,7 @@ input {
   width: 45rem;
   text-align: center;
   color: #fff; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 62.5em) {
     .contact {
       width: 100%;
       margin-top: 2rem; } }
@@ -277,13 +277,13 @@ input {
   background-size: cover;
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .hero {
       width: 100%;
       border-radius: 0; } }
   .hero .content {
     padding: 10rem 0; }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 62.5em) {
       .hero .content {
         text-align: center; } }
 
@@ -291,7 +291,7 @@ input {
   display: flex;
   align-items: center;
   font-size: 1.6rem; }
-  @media only screen and (max-width: 855px) {
+  @media only screen and (max-width: 53.43em) {
     .nav {
       flex-direction: column; } }
   .nav .logo {
@@ -302,15 +302,15 @@ input {
     align-items: center;
     margin-right: auto;
     font-weight: 300; }
-    @media only screen and (max-width: 855px) {
+    @media only screen and (max-width: 53.43em) {
       .nav__list {
         margin: 0 auto; } }
-    @media only screen and (max-width: 413px) {
+    @media only screen and (max-width: 25.81em) {
       .nav__list {
         flex-direction: column; } }
   .nav__item:not(:last-child) {
     margin-right: 0.5rem; }
-  @media only screen and (max-width: 413px) {
+  @media only screen and (max-width: 25.81em) {
     .nav__item {
       margin: 0.7rem 0; } }
   .nav__link {
